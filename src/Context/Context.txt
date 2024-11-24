@@ -1,0 +1,19 @@
+Create a Context as below 
+
+
+ 1 export const  DataContext=createContext(null)
+
+ 2 Wrap the children components with the context Provider
+
+ const data={name:kaka}
+
+
+<DataContext.Provider value={data}>
+<childrenComponents> </childrenComponents> 
+
+<DataContext.Provider>
+
+3 Access Context value
+Import {DataContext} from '/path...'
+
+const contextData=useContext(DataContext)
